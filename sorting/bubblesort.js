@@ -12,12 +12,12 @@ function bubbleSort(input = []) {
 		}
 		j++; //increment counter
 	} while (swapped); //Swap happens, repeat. Else, stopped since it's sorted.
-	return  [input, j];
+	return [input, j];
 }
 
-let input = [3,1,5,2,9,8,6,5,4,5,6]; //6 times
-//let input = [1,2,3,4,5,6,7,8,9]; // 1 times
-//let input = [1,3,2,4,5,6,7,8,9]; // 2 times
+const input = [3,1,5,2,9,8,6,5,4,5,6]; //6 times
+//const input = [1,2,3,4,5,6,7,8,9]; // 1 times
+//const input = [1,3,2,4,5,6,7,8,9]; // 2 times
 console.log(`Your input is ${input}`);
 const [x, y] = bubbleSort(input);
 console.log(`Sorted output is ${x}`);
