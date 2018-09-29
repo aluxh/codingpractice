@@ -1,4 +1,4 @@
-# Sort a String
+# Sololearn - Coding Challenge - Sort a String
 Given a string as input, output its characters alphabetically sorted from A to Z.
 ## Guidelines of the sort
 ### In proper alphabetical order
