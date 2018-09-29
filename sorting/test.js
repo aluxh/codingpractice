@@ -1,7 +1,13 @@
 const bubbleSort = require('./bubblesort');
+const selectionSort = require('./selectionsort');
 
 const input = [3,1,5,2,9,8,6,5,4,5,6]; //6 times
-console.log(`Your input: ${input}`);
+console.log(`Test input: ${input}\n`);
+
 const [x, y] = bubbleSort(input);
 console.log(`Bubble Sorted output: ${x}`);
-console.log(`Number of loops bubble sort took: ${y}`);
+console.log(`Number of loops bubble sort took: ${y}\n`);
+
+const [sx, sy] = selectionSort(input);
+console.log(`Selection Sorted output: ${sx}`);
+console.log(`Number of loops selection sort took: ${sy}\n`);

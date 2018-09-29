@@ -1,5 +1,5 @@
 function bubbleSort(input = []) {
-	let j = 0; // Counter
+	let counter = 0; // Counter
 	do { // Go through at least one round to check if swapping is necessary
 		var swapped = false; // Assuming no swap is necessary
 		for (let i = 0; i < input.length; i++) {
@@ -9,9 +9,9 @@ function bubbleSort(input = []) {
 				swapped = true; // Log if swap has happened
 			}
 		}
-		j++; // Increment counter
+		counter++; // Increment counter
 	} while (swapped); // Swap happened, repeat. Else, stopped since it's sorted.
-	return [input, j];
+	return [input, counter];
 }
 module.exports = bubbleSort;
 
