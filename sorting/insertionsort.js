@@ -13,5 +13,4 @@ function insertionSort(input) {
     }
     return [input , counter];
 }
-
 module.exports = insertionSort;
