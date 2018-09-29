@@ -1,17 +1,16 @@
 function bubbleSort(input = []) {
-	let j = 0; //counter
-	do { //Go through at least one round to check if swapping is necessary
-		var swapped = false; //Assuming no swap is necessary
+	let j = 0; // Counter
+	do { // Go through at least one round to check if swapping is necessary
+		var swapped = false; // Assuming no swap is necessary
 		for (let i = 0; i < input.length; i++) {
-			if (input[i] > input[i+1]) { //Comparing current number with next;
-				let t = input[i];
-				input[i] = input[i+1];
-				input[i+1] = t;
-				swapped = true; //Log if swap has happened
+			if (input[i] > input[i+1]) { // Comparing current number with next;
+				// swap values using destructuring method taught in https://www.sololearn.com/learn/519/?ref=app
+				[input[i], input[i+1]] = [input[i+1], input[i]]
+				swapped = true; // Log if swap has happened
 			}
 		}
-		j++; //increment counter
-	} while (swapped); //Swap happens, repeat. Else, stopped since it's sorted.
+		j++; // Increment counter
+	} while (swapped); // Swap happened, repeat. Else, stopped since it's sorted.
 	return [input, j];
 }
 module.exports = bubbleSort;
