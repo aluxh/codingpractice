@@ -22,3 +22,7 @@ The max length of a word is 10 letters.
 
 - input: { "These", "Mazes", "are", "hard" }
 - output: Mazes
+
+## To-Do
+- Learn how to evaluate inputs and catch errors. Currently, there is bug if input is empty.
+- Learn creating UI

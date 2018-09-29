@@ -9,7 +9,7 @@ const lib = {
     j:8, x:8,
     q:10, z:10
 }
-const calcScore = (text) => {
+function calcScore(text) {
     // Calculate the score of the text
     let score = 0;
     text = text.toLowerCase();
@@ -18,8 +18,8 @@ const calcScore = (text) => {
     }
     return score;
 }
-const higScore = (arr) => {
-    // Compare and return text with highest score
+function higScore(arr) {
+    // Compare and return word with highest score
     let hScore = 0;
     let result;
     
@@ -32,11 +32,17 @@ const higScore = (arr) => {
     }
     return arr[arr.indexOf(result)];
 }
+function checkInput(text) {
+    for (let i of text.split(" ")) {
+        if (i.length > 10) {
+            console.log(`${i} is too long`);
+            return false;
+        }
+    }
+    return true;
+}
 
 const [nodePath, scriptPath, input] = process.argv;
-for (i of input.split(" ")) {    
-    if(i.length > 10) {        
-        console.log(`${i} is too long`);
-    }
+if (checkInput(input)) {
+    console.log(`The word with highest points is ${higScore(input)}.`);
 }
-console.log(higScore(input));
