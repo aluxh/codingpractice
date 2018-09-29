@@ -1,6 +1,6 @@
 function insertionSort(input) {
     let counter = 0;
-    for (let i = 1; i < input.length; i++) {
+    for (let i = 0; i < input.length; i++) {
         //console.log(input);
         for (let j = i; j > 0 && (input[j] < input[j-1]); j--) {
         /* If the next number in the list is bigger than the previous number, 
@@ -11,6 +11,6 @@ function insertionSort(input) {
         }
         counter++;
     }
-    return [input , counter];
+    return [input, counter];
 }
 module.exports = insertionSort;

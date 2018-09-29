@@ -3,6 +3,8 @@ const selectionSort = require('./selectionsort');
 const insertionSort = require('./insertionsort')
 
 const input = [3,1,5,2,9,8,6,5,4,5,6]; //6 times
+// const input = [1,2,3,4,5,6,7,8,9]; // 1 times
+// const input = [1,3,2,4,5,6,7,8,9]; // 2 times
 console.log(`Test input: ${input}\n`);
 
 const [bx, by] = bubbleSort(input);
