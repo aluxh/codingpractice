@@ -47,7 +47,7 @@ function aSort(text) {
     let input = text2Ascii(text);
     
     //filter all digits and sort them.in order
-    let digits = filterAscii(input, 48, 57 );
+    let digits = filterAscii(input, 48, 57 )
     digits = insertionSort(digits);
     digits = ascii2Text(digits);
     
