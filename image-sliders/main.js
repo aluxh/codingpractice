@@ -16,6 +16,9 @@ window.onload = function() {
     slider.src = images[index];
 
     prev.onclick = () => {
+        // (1) Decrease index by 1 
+        // (2) Test whether decreased index go below 0, and if it does, reset it to the index of last image 
+        // (3) assign the image to the img src.
         index -= 1;
         if (index < 0) {
             index = images.length - 1;
@@ -24,6 +27,9 @@ window.onload = function() {
     }
 
     next.onclick = () => {
+        // (1) Increase index by 1 
+        // (2) Test whether increased index go beyond the last index, and if it does, reset it to the 1st image 
+        // (3) assign the image to the img src.
         index += 1;
         if (index > (images.length - 1)) {
             index = 0;
