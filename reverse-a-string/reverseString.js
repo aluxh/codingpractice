@@ -12,7 +12,7 @@ console.log(reverseString("Greetings from Earth")+"\n"); // "htraE morf sgniteer
 
 
 /**
- * FreeCodeCamp did it in one sentence. Using the Built-in functions - (1) split (2) reverse (3) join
+ * FreeCodeCamp did it in one sentence. Using the Built-in functions - (1) string split (2) array reverse (3) array join
  * function reverseString(str) {
  *      str.split('').reverse().join('');
  * }
