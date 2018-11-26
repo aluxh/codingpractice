@@ -1,13 +1,10 @@
-let i = [1,2,3,4,5,6,7,8];
-let j = [8,4,2,1,3,7,5,6];
-
 function mergeSort(input) {
     
     if (input.length > 1) {
         let L = input.slice(0, input.length/2);
-        console.log(L);
+        //console.log(L);
         let R = input.slice(input.length/2);
-        console.log(R);
+        //console.log(R);
         
         L = mergeSort(L);
         R = mergeSort(R);
@@ -36,14 +33,19 @@ function mergeSort(input) {
             indexR++;
         }
         
-        console.log(result);
+        //console.log(result);
         return result;
     } else {
         return input;
     }
 }
 
+module.exports = mergeSort;
 
+/*
+let i = [1,2,3,4,5,6,7,8];
+let j = [8,4,2,1,3,7,5,6];
 console.log("Input: " + j);
 console.log("Code running....")
 console.log("Output: " + mergeSort(j));
+*/
