@@ -1,7 +1,21 @@
 // Write a function that splits an array (first argument) into groups the length of size (second argument) and returns them as a two-dimensional array.
 
 function chunkArrayInGroups(arr, size) {
-
+    let j = [];
+    let y = [];
+    let x = 0;
+    for (let i of arr) {
+        if (x <= size) {
+            y.push(i);
+            x++;
+            if (x >= size) {
+                x = 0;
+                j.push(y);
+                y =[];
+            }
+        }
+    }
+    return j;
 }
 
 
