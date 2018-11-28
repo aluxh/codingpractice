@@ -15,10 +15,12 @@ function chunkArrayInGroups(arr, size) {
             }
         }
     }
+
+    if (y.length > 0) {
+        j = j.concat(y);
+    }
     return j;
 }
-
-
 
 console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2)); // should return [["a", "b"], ["c", "d"]].
 console.log(chunkArrayInGroups([0, 1, 2, 3, 4, 5], 3)); // should return [[0, 1, 2], [3, 4, 5]].
