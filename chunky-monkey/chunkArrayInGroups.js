@@ -17,7 +17,7 @@ function chunkArrayInGroups(arr, size) {
     }
 
     if (y.length > 0) {
-        newArr = newArr.concat(y);
+        newArr.push(y);
     }
     return newArr;
 }
