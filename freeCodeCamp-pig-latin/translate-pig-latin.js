@@ -7,42 +7,28 @@ Input strings are guaranteed to be English words in all lowercase.
 
 function translatePigLatin(str) {
 
-    let vowels = ["a", "e", "i", "o", "u"];
-    
-    function isVowel(char) {
-    // Helper function to check if the char is vowel.
-        for (let i of vowels) {
-            if (i == char) return true;
-        }
-        return false;
-    }
-  
-    function hasVowel(text) {
-    // Help function to check if a word contains vowel
-        for (let i of text) {
-            if (isVowel(i)) return true;
-        }
-        return false;
-    }
-  
-    function vowelPos(text) {
-    // Helper function to return the position of the first
-    // vowel found in a word. If no vowel found, return 0
-        for (let i of text) {
-            if (isVowel(i)) {
-                return text.indexOf(i);
-            } 
-        }
-        return 0;
-    }
-  
+    let regex = /[aeiou]/;
+    let x = str.match(regex);
+    console.log(x);
+    console.log(typeof x);
 
-    if (hasVowel(str) === false) return str + "ay";
-  
-    let index = vowelPos(str);
-    if (index == 0) return str + "way";
-    return str.substr(index) + str.substr(0, index) + "ay";
-}
+    let vowels = ['a', 'e', 'i', 'o', 'u'];
+    let index;
+
+    for (let i of str) {
+        if (vowels.indexOf(i) !== -1) {
+            index = str.indexOf(i);
+            break;
+        }
+    }
+    
+    if ( index === 0 | index === undefined) {
+        return str + "way";
+    } else {
+        return str.slice(index) + str.slice(0, index) + "ay";
+    }
+
+}  
 
 // Test
 
@@ -52,4 +38,4 @@ console.log(translatePigLatin("paragraphs"));  // should return "aragraphspay".
 console.log(translatePigLatin("glove"));  // should return "oveglay".
 console.log(translatePigLatin("algorithm"));  // should return "algorithmway".
 console.log(translatePigLatin("eight"));  // should return "eightway".
-console.log(translatePigLatin("szy")); // should return "szyay"
+console.log(translatePigLatin("szy"));
