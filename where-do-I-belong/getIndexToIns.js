@@ -15,11 +15,11 @@ function getIndexToIns(arr, num) {
     return arr.length;
 }
 
-function getIndexToIns1(arr, num) {
-    arr.push(num);
-    arr.sort((a, b) => a - b);
-    return arr.indexOf(num);
-}
+// function getIndexToIns1(arr, num) {
+//     arr.push(num);
+//     arr.sort((a, b) => a - b);
+//     return arr.indexOf(num);
+// }
 
 // Tests
 console.log(getIndexToIns([10, 20, 30, 40, 50], 35)); // should return 3.
@@ -39,21 +39,21 @@ console.log(getIndexToIns([2, 5, 10], 15)); // should return a number.
 console.log(getIndexToIns([], 1)); // should return 0.
 console.log(getIndexToIns([], 1)); // should return a number.
 
-console.log("Test 2");
+// console.log("Test 2");
 
-console.log(getIndexToIns1([10, 20, 30, 40, 50], 35)); // should return 3.
-console.log(getIndexToIns1([10, 20, 30, 40, 50], 35)); // should return a number.
-console.log(getIndexToIns1([10, 20, 30, 40, 50], 30)); // should return 2.
-console.log(getIndexToIns1([10, 20, 30, 40, 50], 30)); // should return a number.
-console.log(getIndexToIns1([40, 60], 50)); // should return 1.
-console.log(getIndexToIns1([40, 60], 50)); // should return a number.
-console.log(getIndexToIns1([3, 10, 5], 3)); // should return 0.
-console.log(getIndexToIns1([3, 10, 5], 3)); // should return a number.
-console.log(getIndexToIns1([5, 3, 20, 3], 5)); // should return 2.
-console.log(getIndexToIns1([5, 3, 20, 3], 5)); // should return a number.
-console.log(getIndexToIns1([2, 20, 10], 19)); // should return 2.
-console.log(getIndexToIns1([2, 20, 10], 19)); // should return a number.
-console.log(getIndexToIns1([2, 5, 10], 15)); // should return 3.
-console.log(getIndexToIns1([2, 5, 10], 15)); // should return a number.
-console.log(getIndexToIns1([], 1)); // should return 0.
-console.log(getIndexToIns1([], 1)); // should return a number.
+// console.log(getIndexToIns1([10, 20, 30, 40, 50], 35)); // should return 3.
+// console.log(getIndexToIns1([10, 20, 30, 40, 50], 35)); // should return a number.
+// console.log(getIndexToIns1([10, 20, 30, 40, 50], 30)); // should return 2.
+// console.log(getIndexToIns1([10, 20, 30, 40, 50], 30)); // should return a number.
+// console.log(getIndexToIns1([40, 60], 50)); // should return 1.
+// console.log(getIndexToIns1([40, 60], 50)); // should return a number.
+// console.log(getIndexToIns1([3, 10, 5], 3)); // should return 0.
+// console.log(getIndexToIns1([3, 10, 5], 3)); // should return a number.
+// console.log(getIndexToIns1([5, 3, 20, 3], 5)); // should return 2.
+// console.log(getIndexToIns1([5, 3, 20, 3], 5)); // should return a number.
+// console.log(getIndexToIns1([2, 20, 10], 19)); // should return 2.
+// console.log(getIndexToIns1([2, 20, 10], 19)); // should return a number.
+// console.log(getIndexToIns1([2, 5, 10], 15)); // should return 3.
+// console.log(getIndexToIns1([2, 5, 10], 15)); // should return a number.
+// console.log(getIndexToIns1([], 1)); // should return 0.
+// console.log(getIndexToIns1([], 1)); // should return a number.

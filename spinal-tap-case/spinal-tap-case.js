@@ -3,6 +3,13 @@ Spinal Tap Case
 Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.
 */
 
+function mySpinalCase(str) {
+    return str.replace(/([A-Z])/g, ' $1')
+                .split(/[\s_]/g)
+                .filter(x => x !== "")
+                .join("-").toLowerCase();
+  }
+
 function spinalCase(str) {
     // "It's such a fine line between stupid, and clever."
     // --David St. Hubbins

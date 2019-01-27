@@ -1,0 +1,15 @@
+{
+  "name": "matching-array-of-objects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "whatsinobject.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}
