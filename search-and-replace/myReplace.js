@@ -13,6 +13,10 @@ For example if you mean to replace the word "Book" with the word "dog", it shoul
 function myReplace(str, before, after) {
     let regex = new RegExp(before);
 
+    if (before.charCodeAt(0) >= 65 && before.charCodeAt(0) <= 90) {
+        after = after[0].toUpperCase() + after.slice(1);
+    }
+
     return str.replace(regex, after);
 }
 

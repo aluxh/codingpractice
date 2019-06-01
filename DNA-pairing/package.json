@@ -1,0 +1,11 @@
+{
+  "name": "dna-pairing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pair-elements.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Alex Ho",
+  "license": "ISC"
+}
