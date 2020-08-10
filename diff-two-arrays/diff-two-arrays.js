@@ -14,8 +14,17 @@ function diffArray(arr1, arr2) {
                     .concat(arr2.filter(y => arr1.indexOf(y) === -1));
 
     return newArr;
-  }
+}
 
+function diffArray2(arr1, arr2) {
+    var newArr = [];
+    return arr1.filter(x => arr2.indexOf(x) === -1)
+}
+
+console.log(diffArray2([1, 2, 3, 4, 5], [1, 2, 3, 5]));
+console.log([1,2,3,4].indexOf(5));
+
+/*
 console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5])); // should return an array.
 console.log(diffArray(["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"])); // should return ["pink wool"].
 console.log(diffArray(["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"])); // should return an array with one item.
@@ -31,3 +40,4 @@ console.log(diffArray([], ["snuffleupagus", "cookie monster", "elmo"])); // shou
 console.log(diffArray([], ["snuffleupagus", "cookie monster", "elmo"])); // should return an array with three items.
 console.log(diffArray([1, "calf", 3, "piglet"], [7, "filly"])); // should return [1, "calf", 3, "piglet", 7, "filly"].
 console.log(diffArray([1, "calf", 3, "piglet"], [7, "filly"])); // should return an array with six items.
+*/
