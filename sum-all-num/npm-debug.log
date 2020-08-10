@@ -1,0 +1,70 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'i', '--global', 'mocha' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData mocha
+8 silly fetchNamedPackageData mocha
+9 silly mapToRegistry name mocha
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/mocha
+13 verbose request uri https://registry.npmjs.org/mocha
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 9:37:55 AM
+16 verbose request id 359d56fad9f3de37
+17 http request GET https://registry.npmjs.org/mocha
+18 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 104.16.23.35:443
+19 info attempt registry request try #2 at 9:38:28 AM
+20 http request GET https://registry.npmjs.org/mocha
+21 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 104.16.16.35:443
+22 info attempt registry request try #3 at 9:39:49 AM
+23 http request GET https://registry.npmjs.org/mocha
+24 silly fetchPackageMetaData Error: connect ECONNREFUSED 104.16.17.35:443
+24 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+24 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+24 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+24 silly fetchPackageMetaData  error for mocha { Error: connect ECONNREFUSED 104.16.17.35:443
+24 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+24 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+24 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+24 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+24 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+24 silly fetchPackageMetaData   syscall: 'connect',
+24 silly fetchPackageMetaData   address: '104.16.17.35',
+24 silly fetchPackageMetaData   port: 443 }
+25 silly rollbackFailedOptional Starting
+26 silly rollbackFailedOptional Finishing
+27 silly runTopLevelLifecycles Starting
+28 silly runTopLevelLifecycles Finishing
+29 silly install printInstalled
+30 verbose stack Error: connect ECONNREFUSED 104.16.17.35:443
+30 verbose stack     at Object._errnoException (util.js:1022:11)
+30 verbose stack     at _exceptionWithHostPort (util.js:1044:20)
+30 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+31 verbose cwd /mnt/c/Users/hoale/Documents/dev/codingpractice/sum-all-num
+32 error Linux 4.4.0-17763-Microsoft
+33 error argv "/usr/bin/node" "/usr/bin/npm" "i" "--global" "mocha"
+34 error node v8.10.0
+35 error npm  v3.5.2
+36 error code ECONNREFUSED
+37 error errno ECONNREFUSED
+38 error syscall connect
+39 error Error: connect ECONNREFUSED 104.16.17.35:443
+39 error     at Object._errnoException (util.js:1022:11)
+39 error     at _exceptionWithHostPort (util.js:1044:20)
+39 error     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+39 error  { Error: connect ECONNREFUSED 104.16.17.35:443
+39 error     at Object._errnoException (util.js:1022:11)
+39 error     at _exceptionWithHostPort (util.js:1044:20)
+39 error     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+39 error   code: 'ECONNREFUSED',
+39 error   errno: 'ECONNREFUSED',
+39 error   syscall: 'connect',
+39 error   address: '104.16.17.35',
+39 error   port: 443 }
+40 error If you are behind a proxy, please make sure that the
+40 error 'proxy' config is set properly.  See: 'npm help config'
+41 verbose exit [ 1, true ]
